@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz Challenge</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Coding Quiz Challenge</h1>
+        </div>
+        <div class="quiz-question">
+            <p id="question-text"></p>
+            <div class="answer-options">
+                <button class="option" onclick="checkAnswer(0)"></button>
+                <button class="option" onclick="checkAnswer(1)"></button>
+                <button class="option" onclick="checkAnswer(2)"></button>
+                <button class="option" onclick="checkAnswer(3)"></button>
+            </div>
+        </div>
+        <div class="quiz-score">
+            <p>High Scores:</p>
+            <ul id="high-scores">
+                <!-- High scores will be displayed here -->
+            </ul>
+            <p>Enter your initials:</p>
+            <input type="text" id="initials" placeholder="Your initials">
+            <button onclick="saveScore()">Save Score</button>
+        </div>
+        <p id="timer" class="timer">Time: 10:00</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
